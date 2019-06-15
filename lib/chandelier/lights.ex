@@ -46,6 +46,17 @@ defmodule Chandelier.Lights do
     Enum.map(lights, fn(light) -> off(light) end)
     {:reply, :ok, state}
   end
+  def handle_call({:on, idx}, _from, state = %{lights: lights}) do
+    Enum.at(lights, idx) |> on
+    {:reply, :ok, state}
+  end
+  def handle_call({:off, idx}, _from, state = %{lights: lights}) do
+    Enum.at(lights, idx) |> off
+    {:reply, :ok, state}
+  end
+  def handle_call(:get_state, _from, state) do
+    {:reply, state, state}
+  end
   def handle_call(request, from, state) do
     Logger.error "Received Call #{inspect request} - from #{inspect from} - state #{inspect state}"
     {:reply, :ok, state}
@@ -61,11 +72,15 @@ defmodule Chandelier.Lights do
     {:noreply, state}
   end
 
+  def on(light) when is_integer(light), do:
+    GenServer.call(server(), {:on, light})
   def on(light) do
     Logger.debug "Turning on #{light |> inspect}"
     :ok = GPIO.write(light, 0)
   end
 
+  def off(light) when is_integer(light), do:
+    GenServer.call(server(), {:off, light})
   def off(light) do
     Logger.debug "Turning off #{light |> inspect}"
     :ok = GPIO.write(light, 1)
