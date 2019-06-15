@@ -26,12 +26,6 @@ defmodule ChandelierWeb.ChannelCase do
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Chandelier.Repo)
-
-    unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(Chandelier.Repo, {:shared, self()})
-    end
-
     :ok
   end
 end

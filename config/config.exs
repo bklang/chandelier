@@ -7,9 +7,6 @@
 # General application configuration
 use Mix.Config
 
-config :chandelier,
-  ecto_repos: [Chandelier.Repo]
-
 # Configures the endpoint
 config :chandelier, ChandelierWeb.Endpoint,
   url: [host: "localhost"],

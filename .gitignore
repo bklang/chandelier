@@ -4,6 +4,7 @@
 /doc
 /.fetch
 erl_crash.dump
+npm-debug.log
 *.ez
 *.beam
 /config/*.secret.exs
