@@ -20,7 +20,9 @@ defmodule ChandelierWeb.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", ChandelierWeb do
-  #   pipe_through :api
-  # end
+  scope "/api", ChandelierWeb do
+    pipe_through :api
+    post "/switch", SwitchController, :switch
+    post "/switch_all", SwitchController, :switch_all
+  end
 end
