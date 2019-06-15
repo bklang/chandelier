@@ -9,7 +9,8 @@ defmodule Chandelier.Application do
     # List all child processes to be supervised
     children = [
       # Start the endpoint when the application starts
-      ChandelierWeb.Endpoint
+      ChandelierWeb.Endpoint,
+      Chandelier.Lights
       # Starts a worker by calling: Chandelier.Worker.start_link(arg)
       # {Chandelier.Worker, arg},
     ]

@@ -33,6 +33,7 @@ defmodule Chandelier.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
+      {:circuits_gpio, "~> 0.1"},
       {:phoenix, "~> 1.4.7"},
       {:phoenix_pubsub, "~> 1.1"},
       {:phoenix_html, "~> 2.11"},
