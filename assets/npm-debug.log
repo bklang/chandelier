@@ -1,0 +1,727 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+2 info using npm@1.4.21
+3 info using node@v8.11.1
+4 warn package.json @ No description
+5 warn package.json @ No README data
+6 verbose readDependencies using package.json deps
+7 verbose install where, deps [ '/home/pi/chandelier/assets',
+7 verbose install   [ 'phoenix',
+7 verbose install     'phoenix_html',
+7 verbose install     '@babel/core',
+7 verbose install     '@babel/preset-env',
+7 verbose install     'babel-loader',
+7 verbose install     'copy-webpack-plugin',
+7 verbose install     'css-loader',
+7 verbose install     'mini-css-extract-plugin',
+7 verbose install     'optimize-css-assets-webpack-plugin',
+7 verbose install     'uglifyjs-webpack-plugin',
+7 verbose install     'webpack',
+7 verbose install     'webpack-cli' ] ]
+8 info preinstall @
+9 verbose readDependencies using package.json deps
+10 verbose cache add [ 'css-loader@^2.1.1', null ]
+11 verbose cache add name=undefined spec="css-loader@^2.1.1" args=["css-loader@^2.1.1",null]
+12 verbose parsed url Url {
+12 verbose parsed url   protocol: null,
+12 verbose parsed url   slashes: null,
+12 verbose parsed url   auth: null,
+12 verbose parsed url   host: null,
+12 verbose parsed url   port: null,
+12 verbose parsed url   hostname: null,
+12 verbose parsed url   hash: null,
+12 verbose parsed url   search: null,
+12 verbose parsed url   query: null,
+12 verbose parsed url   pathname: 'css-loader@%5E2.1.1',
+12 verbose parsed url   path: 'css-loader@%5E2.1.1',
+12 verbose parsed url   href: 'css-loader@%5E2.1.1' }
+13 verbose cache add [ 'mini-css-extract-plugin@^0.4.0', null ]
+14 verbose cache add name=undefined spec="mini-css-extract-plugin@^0.4.0" args=["mini-css-extract-plugin@^0.4.0",null]
+15 verbose parsed url Url {
+15 verbose parsed url   protocol: null,
+15 verbose parsed url   slashes: null,
+15 verbose parsed url   auth: null,
+15 verbose parsed url   host: null,
+15 verbose parsed url   port: null,
+15 verbose parsed url   hostname: null,
+15 verbose parsed url   hash: null,
+15 verbose parsed url   search: null,
+15 verbose parsed url   query: null,
+15 verbose parsed url   pathname: 'mini-css-extract-plugin@%5E0.4.0',
+15 verbose parsed url   path: 'mini-css-extract-plugin@%5E0.4.0',
+15 verbose parsed url   href: 'mini-css-extract-plugin@%5E0.4.0' }
+16 verbose cache add [ 'optimize-css-assets-webpack-plugin@^4.0.0', null ]
+17 verbose cache add name=undefined spec="optimize-css-assets-webpack-plugin@^4.0.0" args=["optimize-css-assets-webpack-plugin@^4.0.0",null]
+18 verbose parsed url Url {
+18 verbose parsed url   protocol: null,
+18 verbose parsed url   slashes: null,
+18 verbose parsed url   auth: null,
+18 verbose parsed url   host: null,
+18 verbose parsed url   port: null,
+18 verbose parsed url   hostname: null,
+18 verbose parsed url   hash: null,
+18 verbose parsed url   search: null,
+18 verbose parsed url   query: null,
+18 verbose parsed url   pathname: 'optimize-css-assets-webpack-plugin@%5E4.0.0',
+18 verbose parsed url   path: 'optimize-css-assets-webpack-plugin@%5E4.0.0',
+18 verbose parsed url   href: 'optimize-css-assets-webpack-plugin@%5E4.0.0' }
+19 verbose cache add [ 'uglifyjs-webpack-plugin@^1.2.4', null ]
+20 verbose cache add name=undefined spec="uglifyjs-webpack-plugin@^1.2.4" args=["uglifyjs-webpack-plugin@^1.2.4",null]
+21 verbose parsed url Url {
+21 verbose parsed url   protocol: null,
+21 verbose parsed url   slashes: null,
+21 verbose parsed url   auth: null,
+21 verbose parsed url   host: null,
+21 verbose parsed url   port: null,
+21 verbose parsed url   hostname: null,
+21 verbose parsed url   hash: null,
+21 verbose parsed url   search: null,
+21 verbose parsed url   query: null,
+21 verbose parsed url   pathname: 'uglifyjs-webpack-plugin@%5E1.2.4',
+21 verbose parsed url   path: 'uglifyjs-webpack-plugin@%5E1.2.4',
+21 verbose parsed url   href: 'uglifyjs-webpack-plugin@%5E1.2.4' }
+22 verbose cache add [ 'webpack@4.4.0', null ]
+23 verbose cache add name=undefined spec="webpack@4.4.0" args=["webpack@4.4.0",null]
+24 verbose parsed url Url {
+24 verbose parsed url   protocol: null,
+24 verbose parsed url   slashes: null,
+24 verbose parsed url   auth: null,
+24 verbose parsed url   host: null,
+24 verbose parsed url   port: null,
+24 verbose parsed url   hostname: null,
+24 verbose parsed url   hash: null,
+24 verbose parsed url   search: null,
+24 verbose parsed url   query: null,
+24 verbose parsed url   pathname: 'webpack@4.4.0',
+24 verbose parsed url   path: 'webpack@4.4.0',
+24 verbose parsed url   href: 'webpack@4.4.0' }
+25 verbose cache add [ 'webpack-cli@^2.0.10', null ]
+26 verbose cache add name=undefined spec="webpack-cli@^2.0.10" args=["webpack-cli@^2.0.10",null]
+27 verbose parsed url Url {
+27 verbose parsed url   protocol: null,
+27 verbose parsed url   slashes: null,
+27 verbose parsed url   auth: null,
+27 verbose parsed url   host: null,
+27 verbose parsed url   port: null,
+27 verbose parsed url   hostname: null,
+27 verbose parsed url   hash: null,
+27 verbose parsed url   search: null,
+27 verbose parsed url   query: null,
+27 verbose parsed url   pathname: 'webpack-cli@%5E2.0.10',
+27 verbose parsed url   path: 'webpack-cli@%5E2.0.10',
+27 verbose parsed url   href: 'webpack-cli@%5E2.0.10' }
+28 verbose cache add [ 'phoenix@file:../deps/phoenix', null ]
+29 verbose cache add name=undefined spec="phoenix@file:../deps/phoenix" args=["phoenix@file:../deps/phoenix",null]
+30 verbose parsed url Url {
+30 verbose parsed url   protocol: null,
+30 verbose parsed url   slashes: null,
+30 verbose parsed url   auth: null,
+30 verbose parsed url   host: null,
+30 verbose parsed url   port: null,
+30 verbose parsed url   hostname: null,
+30 verbose parsed url   hash: null,
+30 verbose parsed url   search: null,
+30 verbose parsed url   query: null,
+30 verbose parsed url   pathname: 'phoenix@file:../deps/phoenix',
+30 verbose parsed url   path: 'phoenix@file:../deps/phoenix',
+30 verbose parsed url   href: 'phoenix@file:../deps/phoenix' }
+31 verbose cache add [ 'phoenix_html@file:../deps/phoenix_html', null ]
+32 verbose cache add name=undefined spec="phoenix_html@file:../deps/phoenix_html" args=["phoenix_html@file:../deps/phoenix_html",null]
+33 verbose parsed url Url {
+33 verbose parsed url   protocol: null,
+33 verbose parsed url   slashes: null,
+33 verbose parsed url   auth: null,
+33 verbose parsed url   host: null,
+33 verbose parsed url   port: null,
+33 verbose parsed url   hostname: null,
+33 verbose parsed url   hash: null,
+33 verbose parsed url   search: null,
+33 verbose parsed url   query: null,
+33 verbose parsed url   pathname: 'phoenix_html@file:../deps/phoenix_html',
+33 verbose parsed url   path: 'phoenix_html@file:../deps/phoenix_html',
+33 verbose parsed url   href: 'phoenix_html@file:../deps/phoenix_html' }
+34 verbose cache add [ '@babel/core@^7.0.0', null ]
+35 verbose cache add name=undefined spec="@babel/core@^7.0.0" args=["@babel/core@^7.0.0",null]
+36 verbose parsed url Url {
+36 verbose parsed url   protocol: null,
+36 verbose parsed url   slashes: null,
+36 verbose parsed url   auth: null,
+36 verbose parsed url   host: null,
+36 verbose parsed url   port: null,
+36 verbose parsed url   hostname: null,
+36 verbose parsed url   hash: null,
+36 verbose parsed url   search: null,
+36 verbose parsed url   query: null,
+36 verbose parsed url   pathname: '@babel/core@%5E7.0.0',
+36 verbose parsed url   path: '@babel/core@%5E7.0.0',
+36 verbose parsed url   href: '@babel/core@%5E7.0.0' }
+37 verbose cache add [ '@babel/preset-env@^7.0.0', null ]
+38 verbose cache add name=undefined spec="@babel/preset-env@^7.0.0" args=["@babel/preset-env@^7.0.0",null]
+39 verbose parsed url Url {
+39 verbose parsed url   protocol: null,
+39 verbose parsed url   slashes: null,
+39 verbose parsed url   auth: null,
+39 verbose parsed url   host: null,
+39 verbose parsed url   port: null,
+39 verbose parsed url   hostname: null,
+39 verbose parsed url   hash: null,
+39 verbose parsed url   search: null,
+39 verbose parsed url   query: null,
+39 verbose parsed url   pathname: '@babel/preset-env@%5E7.0.0',
+39 verbose parsed url   path: '@babel/preset-env@%5E7.0.0',
+39 verbose parsed url   href: '@babel/preset-env@%5E7.0.0' }
+40 verbose cache add [ 'babel-loader@^8.0.0', null ]
+41 verbose cache add name=undefined spec="babel-loader@^8.0.0" args=["babel-loader@^8.0.0",null]
+42 verbose parsed url Url {
+42 verbose parsed url   protocol: null,
+42 verbose parsed url   slashes: null,
+42 verbose parsed url   auth: null,
+42 verbose parsed url   host: null,
+42 verbose parsed url   port: null,
+42 verbose parsed url   hostname: null,
+42 verbose parsed url   hash: null,
+42 verbose parsed url   search: null,
+42 verbose parsed url   query: null,
+42 verbose parsed url   pathname: 'babel-loader@%5E8.0.0',
+42 verbose parsed url   path: 'babel-loader@%5E8.0.0',
+42 verbose parsed url   href: 'babel-loader@%5E8.0.0' }
+43 verbose cache add [ 'copy-webpack-plugin@^4.5.0', null ]
+44 verbose cache add name=undefined spec="copy-webpack-plugin@^4.5.0" args=["copy-webpack-plugin@^4.5.0",null]
+45 verbose parsed url Url {
+45 verbose parsed url   protocol: null,
+45 verbose parsed url   slashes: null,
+45 verbose parsed url   auth: null,
+45 verbose parsed url   host: null,
+45 verbose parsed url   port: null,
+45 verbose parsed url   hostname: null,
+45 verbose parsed url   hash: null,
+45 verbose parsed url   search: null,
+45 verbose parsed url   query: null,
+45 verbose parsed url   pathname: 'copy-webpack-plugin@%5E4.5.0',
+45 verbose parsed url   path: 'copy-webpack-plugin@%5E4.5.0',
+45 verbose parsed url   href: 'copy-webpack-plugin@%5E4.5.0' }
+46 verbose cache add name="css-loader" spec="^2.1.1" args=["css-loader","^2.1.1"]
+47 verbose parsed url Url {
+47 verbose parsed url   protocol: null,
+47 verbose parsed url   slashes: null,
+47 verbose parsed url   auth: null,
+47 verbose parsed url   host: null,
+47 verbose parsed url   port: null,
+47 verbose parsed url   hostname: null,
+47 verbose parsed url   hash: null,
+47 verbose parsed url   search: null,
+47 verbose parsed url   query: null,
+47 verbose parsed url   pathname: '%5E2.1.1',
+47 verbose parsed url   path: '%5E2.1.1',
+47 verbose parsed url   href: '%5E2.1.1' }
+48 verbose addNamed [ 'css-loader', '^2.1.1' ]
+49 verbose addNamed [ null, '>=2.1.1 <3.0.0' ]
+50 verbose cache add name="mini-css-extract-plugin" spec="^0.4.0" args=["mini-css-extract-plugin","^0.4.0"]
+51 verbose parsed url Url {
+51 verbose parsed url   protocol: null,
+51 verbose parsed url   slashes: null,
+51 verbose parsed url   auth: null,
+51 verbose parsed url   host: null,
+51 verbose parsed url   port: null,
+51 verbose parsed url   hostname: null,
+51 verbose parsed url   hash: null,
+51 verbose parsed url   search: null,
+51 verbose parsed url   query: null,
+51 verbose parsed url   pathname: '%5E0.4.0',
+51 verbose parsed url   path: '%5E0.4.0',
+51 verbose parsed url   href: '%5E0.4.0' }
+52 verbose addNamed [ 'mini-css-extract-plugin', '^0.4.0' ]
+53 verbose addNamed [ null, '>=0.4.0 <0.5.0' ]
+54 verbose cache add name="optimize-css-assets-webpack-plugin" spec="^4.0.0" args=["optimize-css-assets-webpack-plugin","^4.0.0"]
+55 verbose parsed url Url {
+55 verbose parsed url   protocol: null,
+55 verbose parsed url   slashes: null,
+55 verbose parsed url   auth: null,
+55 verbose parsed url   host: null,
+55 verbose parsed url   port: null,
+55 verbose parsed url   hostname: null,
+55 verbose parsed url   hash: null,
+55 verbose parsed url   search: null,
+55 verbose parsed url   query: null,
+55 verbose parsed url   pathname: '%5E4.0.0',
+55 verbose parsed url   path: '%5E4.0.0',
+55 verbose parsed url   href: '%5E4.0.0' }
+56 verbose addNamed [ 'optimize-css-assets-webpack-plugin', '^4.0.0' ]
+57 verbose addNamed [ null, '>=4.0.0 <5.0.0' ]
+58 verbose cache add name="uglifyjs-webpack-plugin" spec="^1.2.4" args=["uglifyjs-webpack-plugin","^1.2.4"]
+59 verbose parsed url Url {
+59 verbose parsed url   protocol: null,
+59 verbose parsed url   slashes: null,
+59 verbose parsed url   auth: null,
+59 verbose parsed url   host: null,
+59 verbose parsed url   port: null,
+59 verbose parsed url   hostname: null,
+59 verbose parsed url   hash: null,
+59 verbose parsed url   search: null,
+59 verbose parsed url   query: null,
+59 verbose parsed url   pathname: '%5E1.2.4',
+59 verbose parsed url   path: '%5E1.2.4',
+59 verbose parsed url   href: '%5E1.2.4' }
+60 verbose addNamed [ 'uglifyjs-webpack-plugin', '^1.2.4' ]
+61 verbose addNamed [ null, '>=1.2.4 <2.0.0' ]
+62 verbose cache add name="webpack" spec="4.4.0" args=["webpack","4.4.0"]
+63 verbose parsed url Url {
+63 verbose parsed url   protocol: null,
+63 verbose parsed url   slashes: null,
+63 verbose parsed url   auth: null,
+63 verbose parsed url   host: null,
+63 verbose parsed url   port: null,
+63 verbose parsed url   hostname: null,
+63 verbose parsed url   hash: null,
+63 verbose parsed url   search: null,
+63 verbose parsed url   query: null,
+63 verbose parsed url   pathname: '4.4.0',
+63 verbose parsed url   path: '4.4.0',
+63 verbose parsed url   href: '4.4.0' }
+64 verbose addNamed [ 'webpack', '4.4.0' ]
+65 verbose addNamed [ '4.4.0', '4.4.0' ]
+66 verbose cache add name="webpack-cli" spec="^2.0.10" args=["webpack-cli","^2.0.10"]
+67 verbose parsed url Url {
+67 verbose parsed url   protocol: null,
+67 verbose parsed url   slashes: null,
+67 verbose parsed url   auth: null,
+67 verbose parsed url   host: null,
+67 verbose parsed url   port: null,
+67 verbose parsed url   hostname: null,
+67 verbose parsed url   hash: null,
+67 verbose parsed url   search: null,
+67 verbose parsed url   query: null,
+67 verbose parsed url   pathname: '%5E2.0.10',
+67 verbose parsed url   path: '%5E2.0.10',
+67 verbose parsed url   href: '%5E2.0.10' }
+68 verbose addNamed [ 'webpack-cli', '^2.0.10' ]
+69 verbose addNamed [ null, '>=2.0.10 <3.0.0' ]
+70 verbose cache add name="phoenix" spec="file:../deps/phoenix" args=["phoenix","file:../deps/phoenix"]
+71 verbose parsed url Url {
+71 verbose parsed url   protocol: 'file:',
+71 verbose parsed url   slashes: null,
+71 verbose parsed url   auth: null,
+71 verbose parsed url   host: null,
+71 verbose parsed url   port: null,
+71 verbose parsed url   hostname: null,
+71 verbose parsed url   hash: null,
+71 verbose parsed url   search: null,
+71 verbose parsed url   query: null,
+71 verbose parsed url   pathname: '../deps/phoenix',
+71 verbose parsed url   path: '../deps/phoenix',
+71 verbose parsed url   href: 'file://../deps/phoenix' }
+72 verbose addNamed [ 'phoenix', 'file:../deps/phoenix' ]
+73 verbose addNamed [ null, null ]
+74 verbose cache add name="phoenix_html" spec="file:../deps/phoenix_html" args=["phoenix_html","file:../deps/phoenix_html"]
+75 verbose parsed url Url {
+75 verbose parsed url   protocol: 'file:',
+75 verbose parsed url   slashes: null,
+75 verbose parsed url   auth: null,
+75 verbose parsed url   host: null,
+75 verbose parsed url   port: null,
+75 verbose parsed url   hostname: null,
+75 verbose parsed url   hash: null,
+75 verbose parsed url   search: null,
+75 verbose parsed url   query: null,
+75 verbose parsed url   pathname: '../deps/phoenix_html',
+75 verbose parsed url   path: '../deps/phoenix_html',
+75 verbose parsed url   href: 'file://../deps/phoenix_html' }
+76 verbose addNamed [ 'phoenix_html', 'file:../deps/phoenix_html' ]
+77 verbose addNamed [ null, null ]
+78 verbose cache add name="" spec="babel/core@^7.0.0" args=["","babel/core@^7.0.0"]
+79 verbose parsed url Url {
+79 verbose parsed url   protocol: null,
+79 verbose parsed url   slashes: null,
+79 verbose parsed url   auth: null,
+79 verbose parsed url   host: null,
+79 verbose parsed url   port: null,
+79 verbose parsed url   hostname: null,
+79 verbose parsed url   hash: null,
+79 verbose parsed url   search: null,
+79 verbose parsed url   query: null,
+79 verbose parsed url   pathname: 'babel/core@%5E7.0.0',
+79 verbose parsed url   path: 'babel/core@%5E7.0.0',
+79 verbose parsed url   href: 'babel/core@%5E7.0.0' }
+80 verbose cache add name="" spec="babel/preset-env@^7.0.0" args=["","babel/preset-env@^7.0.0"]
+81 verbose parsed url Url {
+81 verbose parsed url   protocol: null,
+81 verbose parsed url   slashes: null,
+81 verbose parsed url   auth: null,
+81 verbose parsed url   host: null,
+81 verbose parsed url   port: null,
+81 verbose parsed url   hostname: null,
+81 verbose parsed url   hash: null,
+81 verbose parsed url   search: null,
+81 verbose parsed url   query: null,
+81 verbose parsed url   pathname: 'babel/preset-env@%5E7.0.0',
+81 verbose parsed url   path: 'babel/preset-env@%5E7.0.0',
+81 verbose parsed url   href: 'babel/preset-env@%5E7.0.0' }
+82 verbose cache add name="babel-loader" spec="^8.0.0" args=["babel-loader","^8.0.0"]
+83 verbose parsed url Url {
+83 verbose parsed url   protocol: null,
+83 verbose parsed url   slashes: null,
+83 verbose parsed url   auth: null,
+83 verbose parsed url   host: null,
+83 verbose parsed url   port: null,
+83 verbose parsed url   hostname: null,
+83 verbose parsed url   hash: null,
+83 verbose parsed url   search: null,
+83 verbose parsed url   query: null,
+83 verbose parsed url   pathname: '%5E8.0.0',
+83 verbose parsed url   path: '%5E8.0.0',
+83 verbose parsed url   href: '%5E8.0.0' }
+84 verbose addNamed [ 'babel-loader', '^8.0.0' ]
+85 verbose addNamed [ null, '>=8.0.0 <9.0.0' ]
+86 verbose cache add name="copy-webpack-plugin" spec="^4.5.0" args=["copy-webpack-plugin","^4.5.0"]
+87 verbose parsed url Url {
+87 verbose parsed url   protocol: null,
+87 verbose parsed url   slashes: null,
+87 verbose parsed url   auth: null,
+87 verbose parsed url   host: null,
+87 verbose parsed url   port: null,
+87 verbose parsed url   hostname: null,
+87 verbose parsed url   hash: null,
+87 verbose parsed url   search: null,
+87 verbose parsed url   query: null,
+87 verbose parsed url   pathname: '%5E4.5.0',
+87 verbose parsed url   path: '%5E4.5.0',
+87 verbose parsed url   href: '%5E4.5.0' }
+88 verbose addNamed [ 'copy-webpack-plugin', '^4.5.0' ]
+89 verbose addNamed [ null, '>=4.5.0 <5.0.0' ]
+90 verbose cache add name="babel/core" spec="^7.0.0" args=["babel/core","^7.0.0"]
+91 verbose parsed url Url {
+91 verbose parsed url   protocol: null,
+91 verbose parsed url   slashes: null,
+91 verbose parsed url   auth: null,
+91 verbose parsed url   host: null,
+91 verbose parsed url   port: null,
+91 verbose parsed url   hostname: null,
+91 verbose parsed url   hash: null,
+91 verbose parsed url   search: null,
+91 verbose parsed url   query: null,
+91 verbose parsed url   pathname: '%5E7.0.0',
+91 verbose parsed url   path: '%5E7.0.0',
+91 verbose parsed url   href: '%5E7.0.0' }
+92 verbose addNamed [ 'babel/core', '^7.0.0' ]
+93 verbose addNamed [ null, '>=7.0.0 <8.0.0' ]
+94 silly lockFile 9a98418a-babel-core-7-0-0 babel/core@^7.0.0
+95 verbose lock babel/core@^7.0.0 /home/pi/.npm/9a98418a-babel-core-7-0-0.lock
+96 verbose cache add name="babel/preset-env" spec="^7.0.0" args=["babel/preset-env","^7.0.0"]
+97 verbose parsed url Url {
+97 verbose parsed url   protocol: null,
+97 verbose parsed url   slashes: null,
+97 verbose parsed url   auth: null,
+97 verbose parsed url   host: null,
+97 verbose parsed url   port: null,
+97 verbose parsed url   hostname: null,
+97 verbose parsed url   hash: null,
+97 verbose parsed url   search: null,
+97 verbose parsed url   query: null,
+97 verbose parsed url   pathname: '%5E7.0.0',
+97 verbose parsed url   path: '%5E7.0.0',
+97 verbose parsed url   href: '%5E7.0.0' }
+98 verbose addNamed [ 'babel/preset-env', '^7.0.0' ]
+99 verbose addNamed [ null, '>=7.0.0 <8.0.0' ]
+100 silly lockFile 81eef9db-babel-preset-env-7-0-0 babel/preset-env@^7.0.0
+101 verbose lock babel/preset-env@^7.0.0 /home/pi/.npm/81eef9db-babel-preset-env-7-0-0.lock
+102 silly addNameRange { name: 'babel/core', range: '>=7.0.0 <8.0.0', hasData: false }
+103 silly addNameRange { name: 'babel/preset-env',
+103 silly addNameRange   range: '>=7.0.0 <8.0.0',
+103 silly addNameRange   hasData: false }
+104 verbose request where is /babel/core
+105 verbose request registry https://registry.npmjs.org/
+106 verbose request id c4a5a94c175034f7
+107 verbose url raw /babel/core
+108 verbose url resolving [ 'https://registry.npmjs.org/', './babel/core' ]
+109 verbose url resolved https://registry.npmjs.org/babel/core
+110 verbose request where is https://registry.npmjs.org/babel/core
+111 info trying registry request attempt 1 at 1:27:01 AM
+112 http GET https://registry.npmjs.org/babel/core
+113 verbose request where is /babel/preset-env
+114 verbose request registry https://registry.npmjs.org/
+115 verbose url raw /babel/preset-env
+116 verbose url resolving [ 'https://registry.npmjs.org/', './babel/preset-env' ]
+117 verbose url resolved https://registry.npmjs.org/babel/preset-env
+118 verbose request where is https://registry.npmjs.org/babel/preset-env
+119 info trying registry request attempt 1 at 1:27:02 AM
+120 http GET https://registry.npmjs.org/babel/preset-env
+121 silly lockFile a51bdcfa-css-loader-2-1-1 css-loader@^2.1.1
+122 verbose lock css-loader@^2.1.1 /home/pi/.npm/a51bdcfa-css-loader-2-1-1.lock
+123 silly lockFile b619d6c4-mini-css-extract-plugin-0-4-0 mini-css-extract-plugin@^0.4.0
+124 verbose lock mini-css-extract-plugin@^0.4.0 /home/pi/.npm/b619d6c4-mini-css-extract-plugin-0-4-0.lock
+125 silly lockFile 4a028942--css-assets-webpack-plugin-4-0-0 optimize-css-assets-webpack-plugin@^4.0.0
+126 verbose lock optimize-css-assets-webpack-plugin@^4.0.0 /home/pi/.npm/4a028942--css-assets-webpack-plugin-4-0-0.lock
+127 silly lockFile 63df903d-uglifyjs-webpack-plugin-1-2-4 uglifyjs-webpack-plugin@^1.2.4
+128 verbose lock uglifyjs-webpack-plugin@^1.2.4 /home/pi/.npm/63df903d-uglifyjs-webpack-plugin-1-2-4.lock
+129 silly lockFile 10aabd83-webpack-4-4-0 webpack@4.4.0
+130 verbose lock webpack@4.4.0 /home/pi/.npm/10aabd83-webpack-4-4-0.lock
+131 silly lockFile 9dd76aaa-webpack-cli-2-0-10 webpack-cli@^2.0.10
+132 verbose lock webpack-cli@^2.0.10 /home/pi/.npm/9dd76aaa-webpack-cli-2-0-10.lock
+133 silly lockFile a07f3439-phoenix-file-deps-phoenix phoenix@file:../deps/phoenix
+134 verbose lock phoenix@file:../deps/phoenix /home/pi/.npm/a07f3439-phoenix-file-deps-phoenix.lock
+135 silly lockFile c22223fd-enix-html-file-deps-phoenix-html phoenix_html@file:../deps/phoenix_html
+136 verbose lock phoenix_html@file:../deps/phoenix_html /home/pi/.npm/c22223fd-enix-html-file-deps-phoenix-html.lock
+137 silly lockFile 4b11bfda-babel-loader-8-0-0 babel-loader@^8.0.0
+138 verbose lock babel-loader@^8.0.0 /home/pi/.npm/4b11bfda-babel-loader-8-0-0.lock
+139 silly lockFile 663facaa-copy-webpack-plugin-4-5-0 copy-webpack-plugin@^4.5.0
+140 verbose lock copy-webpack-plugin@^4.5.0 /home/pi/.npm/663facaa-copy-webpack-plugin-4-5-0.lock
+141 silly addNameRange { name: 'css-loader', range: '>=2.1.1 <3.0.0', hasData: false }
+142 silly addNameRange { name: 'mini-css-extract-plugin',
+142 silly addNameRange   range: '>=0.4.0 <0.5.0',
+142 silly addNameRange   hasData: false }
+143 silly addNameRange { name: 'optimize-css-assets-webpack-plugin',
+143 silly addNameRange   range: '>=4.0.0 <5.0.0',
+143 silly addNameRange   hasData: false }
+144 silly addNameRange { name: 'uglifyjs-webpack-plugin',
+144 silly addNameRange   range: '>=1.2.4 <2.0.0',
+144 silly addNameRange   hasData: false }
+145 silly addNameRange { name: 'webpack-cli', range: '>=2.0.10 <3.0.0', hasData: false }
+146 info addNameTag [ 'phoenix', 'file:../deps/phoenix' ]
+147 info addNameTag [ 'phoenix_html', 'file:../deps/phoenix_html' ]
+148 silly addNameRange { name: 'babel-loader', range: '>=8.0.0 <9.0.0', hasData: false }
+149 silly addNameRange { name: 'copy-webpack-plugin',
+149 silly addNameRange   range: '>=4.5.0 <5.0.0',
+149 silly addNameRange   hasData: false }
+150 verbose request where is /css-loader
+151 verbose request registry https://registry.npmjs.org/
+152 verbose url raw /css-loader
+153 verbose url resolving [ 'https://registry.npmjs.org/', './css-loader' ]
+154 verbose url resolved https://registry.npmjs.org/css-loader
+155 verbose request where is https://registry.npmjs.org/css-loader
+156 info trying registry request attempt 1 at 1:27:02 AM
+157 http GET https://registry.npmjs.org/css-loader
+158 verbose request where is /mini-css-extract-plugin
+159 verbose request registry https://registry.npmjs.org/
+160 verbose url raw /mini-css-extract-plugin
+161 verbose url resolving [ 'https://registry.npmjs.org/', './mini-css-extract-plugin' ]
+162 verbose url resolved https://registry.npmjs.org/mini-css-extract-plugin
+163 verbose request where is https://registry.npmjs.org/mini-css-extract-plugin
+164 info trying registry request attempt 1 at 1:27:02 AM
+165 http GET https://registry.npmjs.org/mini-css-extract-plugin
+166 verbose request where is /optimize-css-assets-webpack-plugin
+167 verbose request registry https://registry.npmjs.org/
+168 verbose url raw /optimize-css-assets-webpack-plugin
+169 verbose url resolving [ 'https://registry.npmjs.org/',
+169 verbose url resolving   './optimize-css-assets-webpack-plugin' ]
+170 verbose url resolved https://registry.npmjs.org/optimize-css-assets-webpack-plugin
+171 verbose request where is https://registry.npmjs.org/optimize-css-assets-webpack-plugin
+172 info trying registry request attempt 1 at 1:27:02 AM
+173 http GET https://registry.npmjs.org/optimize-css-assets-webpack-plugin
+174 verbose request where is /uglifyjs-webpack-plugin
+175 verbose request registry https://registry.npmjs.org/
+176 verbose url raw /uglifyjs-webpack-plugin
+177 verbose url resolving [ 'https://registry.npmjs.org/', './uglifyjs-webpack-plugin' ]
+178 verbose url resolved https://registry.npmjs.org/uglifyjs-webpack-plugin
+179 verbose request where is https://registry.npmjs.org/uglifyjs-webpack-plugin
+180 info trying registry request attempt 1 at 1:27:02 AM
+181 http GET https://registry.npmjs.org/uglifyjs-webpack-plugin
+182 verbose request where is /webpack
+183 verbose request registry https://registry.npmjs.org/
+184 verbose url raw /webpack
+185 verbose url resolving [ 'https://registry.npmjs.org/', './webpack' ]
+186 verbose url resolved https://registry.npmjs.org/webpack
+187 verbose request where is https://registry.npmjs.org/webpack
+188 info trying registry request attempt 1 at 1:27:02 AM
+189 http GET https://registry.npmjs.org/webpack
+190 verbose request where is /webpack-cli
+191 verbose request registry https://registry.npmjs.org/
+192 verbose url raw /webpack-cli
+193 verbose url resolving [ 'https://registry.npmjs.org/', './webpack-cli' ]
+194 verbose url resolved https://registry.npmjs.org/webpack-cli
+195 verbose request where is https://registry.npmjs.org/webpack-cli
+196 info trying registry request attempt 1 at 1:27:02 AM
+197 http GET https://registry.npmjs.org/webpack-cli
+198 verbose request where is /phoenix
+199 verbose request registry https://registry.npmjs.org/
+200 verbose url raw /phoenix
+201 verbose url resolving [ 'https://registry.npmjs.org/', './phoenix' ]
+202 verbose url resolved https://registry.npmjs.org/phoenix
+203 verbose request where is https://registry.npmjs.org/phoenix
+204 info trying registry request attempt 1 at 1:27:02 AM
+205 http GET https://registry.npmjs.org/phoenix
+206 verbose request where is /phoenix_html
+207 verbose request registry https://registry.npmjs.org/
+208 verbose url raw /phoenix_html
+209 verbose url resolving [ 'https://registry.npmjs.org/', './phoenix_html' ]
+210 verbose url resolved https://registry.npmjs.org/phoenix_html
+211 verbose request where is https://registry.npmjs.org/phoenix_html
+212 info trying registry request attempt 1 at 1:27:02 AM
+213 http GET https://registry.npmjs.org/phoenix_html
+214 verbose request where is /babel-loader
+215 verbose request registry https://registry.npmjs.org/
+216 verbose url raw /babel-loader
+217 verbose url resolving [ 'https://registry.npmjs.org/', './babel-loader' ]
+218 verbose url resolved https://registry.npmjs.org/babel-loader
+219 verbose request where is https://registry.npmjs.org/babel-loader
+220 info trying registry request attempt 1 at 1:27:02 AM
+221 http GET https://registry.npmjs.org/babel-loader
+222 verbose request where is /copy-webpack-plugin
+223 verbose request registry https://registry.npmjs.org/
+224 verbose url raw /copy-webpack-plugin
+225 verbose url resolving [ 'https://registry.npmjs.org/', './copy-webpack-plugin' ]
+226 verbose url resolved https://registry.npmjs.org/copy-webpack-plugin
+227 verbose request where is https://registry.npmjs.org/copy-webpack-plugin
+228 info trying registry request attempt 1 at 1:27:02 AM
+229 http GET https://registry.npmjs.org/copy-webpack-plugin
+230 http 405 https://registry.npmjs.org/babel/core
+231 silly registry.get cb [ 405,
+231 silly registry.get   { date: 'Sat, 15 Jun 2019 01:27:03 GMT',
+231 silly registry.get     'content-type': 'application/json',
+231 silly registry.get     'content-length': '63',
+231 silly registry.get     connection: 'close',
+231 silly registry.get     'set-cookie':
+231 silly registry.get      [ '__cfduid=d327ad484442e2634d2ed933b9ff1eea21560562023; expires=Sun, 14-Jun-20 01:27:03 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+231 silly registry.get     'cf-ray': '4e70c26459f9ccd2-EWR',
+231 silly registry.get     allow: 'PUT',
+231 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+231 silly registry.get     vary: 'Accept-Encoding',
+231 silly registry.get     server: 'cloudflare' } ]
+232 http 405 https://registry.npmjs.org/babel/preset-env
+233 silly registry.get cb [ 405,
+233 silly registry.get   { date: 'Sat, 15 Jun 2019 01:27:03 GMT',
+233 silly registry.get     'content-type': 'application/json',
+233 silly registry.get     'content-length': '63',
+233 silly registry.get     connection: 'close',
+233 silly registry.get     'set-cookie':
+233 silly registry.get      [ '__cfduid=d28517a4da185ae3bf8b098fb95113c821560562023; expires=Sun, 14-Jun-20 01:27:03 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+233 silly registry.get     'cf-ray': '4e70c2647b15922e-EWR',
+233 silly registry.get     allow: 'PUT',
+233 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+233 silly registry.get     vary: 'Accept-Encoding',
+233 silly registry.get     server: 'cloudflare' } ]
+234 http 200 https://registry.npmjs.org/optimize-css-assets-webpack-plugin
+235 silly registry.get cb [ 200,
+235 silly registry.get   { date: 'Sat, 15 Jun 2019 01:27:03 GMT',
+235 silly registry.get     'content-type': 'application/json',
+235 silly registry.get     'transfer-encoding': 'chunked',
+235 silly registry.get     connection: 'close',
+235 silly registry.get     'set-cookie':
+235 silly registry.get      [ '__cfduid=d802f40185880d895c8cc38aa2f1fd6a81560562023; expires=Sun, 14-Jun-20 01:27:03 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+235 silly registry.get     'cf-cache-status': 'HIT',
+235 silly registry.get     'cache-control': 'max-age=300',
+235 silly registry.get     'cf-ray': '4e70c2646d8f21d8-EWR',
+235 silly registry.get     etag: 'W/"0d65a47c55e692f241f4b42ad784b4d4"',
+235 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+235 silly registry.get     'last-modified': 'Sat, 05 Jan 2019 01:34:55 GMT',
+235 silly registry.get     vary: 'accept-encoding, accept',
+235 silly registry.get     'x-amz-meta-rev': '42-4b858c0aa85b04604314d5e60ee9df1e',
+235 silly registry.get     server: 'cloudflare',
+235 silly registry.get     'content-encoding': 'gzip' } ]
+236 http 200 https://registry.npmjs.org/mini-css-extract-plugin
+237 silly registry.get cb [ 200,
+237 silly registry.get   { date: 'Sat, 15 Jun 2019 01:27:03 GMT',
+237 silly registry.get     'content-type': 'application/json',
+237 silly registry.get     'transfer-encoding': 'chunked',
+237 silly registry.get     connection: 'close',
+237 silly registry.get     'set-cookie':
+237 silly registry.get      [ '__cfduid=d1ec37e3f90df39e3cb64967512131f961560562023; expires=Sun, 14-Jun-20 01:27:03 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+237 silly registry.get     'cf-cache-status': 'HIT',
+237 silly registry.get     'cache-control': 'max-age=300',
+237 silly registry.get     'cf-ray': '4e70c2646d152190-EWR',
+237 silly registry.get     etag: 'W/"266e6931575fa603113e502f3ba2e299"',
+237 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+237 silly registry.get     'last-modified': 'Fri, 07 Jun 2019 11:06:58 GMT',
+237 silly registry.get     vary: 'accept-encoding, accept',
+237 silly registry.get     'x-amz-meta-rev': '23-50ef09ef85bbf1d1e6e5de3c9e1470aa',
+237 silly registry.get     server: 'cloudflare',
+237 silly registry.get     'content-encoding': 'gzip' } ]
+238 http 200 https://registry.npmjs.org/css-loader
+239 silly registry.get cb [ 200,
+239 silly registry.get   { date: 'Sat, 15 Jun 2019 01:27:03 GMT',
+239 silly registry.get     'content-type': 'application/json',
+239 silly registry.get     'transfer-encoding': 'chunked',
+239 silly registry.get     connection: 'close',
+239 silly registry.get     'set-cookie':
+239 silly registry.get      [ '__cfduid=d85ac13c9051ce3cfb95d7fa4269082b71560562023; expires=Sun, 14-Jun-20 01:27:03 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+239 silly registry.get     'cf-cache-status': 'HIT',
+239 silly registry.get     'cache-control': 'max-age=300',
+239 silly registry.get     'cf-ray': '4e70c2646956c5cc-EWR',
+239 silly registry.get     etag: 'W/"33c47977f776e881e298efa0a5e0b927"',
+239 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+239 silly registry.get     'last-modified': 'Tue, 11 Jun 2019 12:43:54 GMT',
+239 silly registry.get     vary: 'accept-encoding, accept',
+239 silly registry.get     'x-amz-meta-rev': '254-d508de6acb6f4a8899cea2d1c73400a0',
+239 silly registry.get     server: 'cloudflare',
+239 silly registry.get     'content-encoding': 'gzip' } ]
+240 silly addNameRange number 2 { name: 'mini-css-extract-plugin',
+240 silly addNameRange   range: '>=0.4.0 <0.5.0',
+240 silly addNameRange   hasData: true }
+241 silly addNameRange versions [ 'mini-css-extract-plugin',
+241 silly addNameRange   [ '0.1.0',
+241 silly addNameRange     '0.2.0',
+241 silly addNameRange     '0.3.0',
+241 silly addNameRange     '0.4.0',
+241 silly addNameRange     '0.4.1',
+241 silly addNameRange     '0.4.2',
+241 silly addNameRange     '0.4.3',
+241 silly addNameRange     '0.4.4',
+241 silly addNameRange     '0.4.5',
+241 silly addNameRange     '0.5.0',
+241 silly addNameRange     '0.6.0',
+241 silly addNameRange     '0.7.0' ] ]
+242 verbose addNamed [ 'mini-css-extract-plugin', '0.4.5' ]
+243 verbose addNamed [ '0.4.5', '0.4.5' ]
+244 silly lockFile 3f57fdd4-mini-css-extract-plugin-0-4-5 mini-css-extract-plugin@0.4.5
+245 verbose lock mini-css-extract-plugin@0.4.5 /home/pi/.npm/3f57fdd4-mini-css-extract-plugin-0-4-5.lock
+246 http 200 https://registry.npmjs.org/copy-webpack-plugin
+247 silly registry.get cb [ 200,
+247 silly registry.get   { date: 'Sat, 15 Jun 2019 01:27:03 GMT',
+247 silly registry.get     'content-type': 'application/json',
+247 silly registry.get     'transfer-encoding': 'chunked',
+247 silly registry.get     connection: 'close',
+247 silly registry.get     'set-cookie':
+247 silly registry.get      [ '__cfduid=d1f2237dd20ec74375d4412f8559e2fa31560562023; expires=Sun, 14-Jun-20 01:27:03 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+247 silly registry.get     'cf-cache-status': 'HIT',
+247 silly registry.get     'cache-control': 'max-age=300',
+247 silly registry.get     'cf-ray': '4e70c267ea73ccc6-EWR',
+247 silly registry.get     etag: 'W/"3fc723b1fefd86241a88ed27627de086"',
+247 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+247 silly registry.get     'last-modified': 'Wed, 24 Apr 2019 15:17:05 GMT',
+247 silly registry.get     vary: 'accept-encoding, accept',
+247 silly registry.get     'x-amz-meta-rev': '103-1719e060e3aaf8be72678229f9501039',
+247 silly registry.get     server: 'cloudflare',
+247 silly registry.get     'content-encoding': 'gzip' } ]
+248 silly addNameRange number 2 { name: 'optimize-css-assets-webpack-plugin',
+248 silly addNameRange   range: '>=4.0.0 <5.0.0',
+248 silly addNameRange   hasData: true }
+249 silly addNameRange versions [ 'optimize-css-assets-webpack-plugin',
+249 silly addNameRange   [ '1.0.0',
+249 silly addNameRange     '1.1.0',
+249 silly addNameRange     '1.2.0',
+249 silly addNameRange     '1.3.0',
+249 silly addNameRange     '1.3.1',
+249 silly addNameRange     '1.3.2',
+249 silly addNameRange     '2.0.0',
+249 silly addNameRange     '3.0.0',
+249 silly addNameRange     '3.1.0',
+249 silly addNameRange     '3.1.1',
+249 silly addNameRange     '3.2.0',
+249 silly addNameRange     '4.0.0',
+249 silly addNameRange     '4.0.1',
+249 silly addNameRange     '4.0.2',
+249 silly addNameRange     '4.0.3',
+249 silly addNameRange     '5.0.0',
+249 silly addNameRange     '5.0.1' ] ]
+250 verbose addNamed [ 'optimize-css-assets-webpack-plugin', '4.0.3' ]
+251 verbose addNamed [ '4.0.3', '4.0.3' ]
+252 silly lockFile 095984e9--css-assets-webpack-plugin-4-0-3 optimize-css-assets-webpack-plugin@4.0.3
+253 verbose lock optimize-css-assets-webpack-plugin@4.0.3 /home/pi/.npm/095984e9--css-assets-webpack-plugin-4-0-3.lock
+254 silly lockFile c8badeee-ini-css-extract-plugin-0-4-5-tgz https://registry.npmjs.org/mini-css-extract-plugin/-/mini-css-extract-plugin-0.4.5.tgz
+255 verbose lock https://registry.npmjs.org/mini-css-extract-plugin/-/mini-css-extract-plugin-0.4.5.tgz /home/pi/.npm/c8badeee-ini-css-extract-plugin-0-4-5-tgz.lock
+256 silly lockFile 81eef9db-babel-preset-env-7-0-0 babel/preset-env@^7.0.0
+257 silly lockFile 81eef9db-babel-preset-env-7-0-0 babel/preset-env@^7.0.0
+258 error Error: Method Not Allowed
+258 error     at errorResponse (/usr/share/npm/lib/cache/add-named.js:260:10)
+258 error     at /usr/share/npm/lib/cache/add-named.js:203:12
+258 error     at saved (/usr/share/npm/node_modules/npm-registry-client/lib/get.js:167:7)
+258 error     at FSReqWrap.oncomplete (fs.js:135:15)
+259 error If you need help, you may report this *entire* log,
+259 error including the npm and node versions, at:
+259 error     <http://github.com/npm/npm/issues>
+260 error System Linux 4.19.42-v7+
+261 error command "/usr/bin/node" "/usr/bin/npm" "install"
+262 error cwd /home/pi/chandelier/assets
+263 error node -v v8.11.1
+264 error npm -v 1.4.21
+265 error code E405
+266 verbose exit [ 1, true ]
