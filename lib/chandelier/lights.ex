@@ -30,28 +30,12 @@ defmodule Chandelier.Lights do
     {:ok, %{lights: lights, type: type}}
   end
 
-  def all_on() do
-    GenServer.call(server(), :all_on)
-  end
-
-  def all_off() do
-    GenServer.call(server(), :all_off)
-  end
-
-  def handle_call(:all_on, _from, state = %{lights: lights}) do
-    Enum.map(lights, fn(light) -> on(light) end)
+  def handle_call({:switch_all, direction}, _from, state = %{lights: lights}) do
+    Enum.map(lights, fn(light) -> switch(light, direction) end)
     {:reply, :ok, state}
   end
-  def handle_call(:all_off, _from, state = %{lights: lights}) do
-    Enum.map(lights, fn(light) -> off(light) end)
-    {:reply, :ok, state}
-  end
-  def handle_call({:on, idx}, _from, state = %{lights: lights}) do
-    Enum.at(lights, idx) |> on
-    {:reply, :ok, state}
-  end
-  def handle_call({:off, idx}, _from, state = %{lights: lights}) do
-    Enum.at(lights, idx) |> off
+  def handle_call({:switch, idx, direction}, _from, state = %{lights: lights}) do
+    Enum.at(lights, idx) |> switch(direction)
     {:reply, :ok, state}
   end
   def handle_call(:get_state, _from, state) do
@@ -72,17 +56,19 @@ defmodule Chandelier.Lights do
     {:noreply, state}
   end
 
-  def on(light) when is_integer(light), do:
-    GenServer.call(server(), {:on, light})
-  def on(light) do
-    Logger.debug "Turning on #{light |> inspect}"
-    :ok = GPIO.write(light, 0)
+  def switch_all(direction) do
+    GenServer.call(server(), {:switch_all, direction})
   end
 
-  def off(light) when is_integer(light), do:
-    GenServer.call(server(), {:off, light})
-  def off(light) do
+  def switch(light, direction) when is_integer(light) do
+    GenServer.call(server(), {:switch, light, direction})
+  end
+  def switch(light, true) when is_reference(light) do
+    Logger.debug "Turning on #{light |> inspect}"
+    :ok = GPIO.write(light, 0) # LOW is on
+  end
+  def switch(light, false) when is_reference(light) do
     Logger.debug "Turning off #{light |> inspect}"
-    :ok = GPIO.write(light, 1)
+    :ok = GPIO.write(light, 1) # HIGH is off
   end
 end
