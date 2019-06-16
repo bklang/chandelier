@@ -9,3 +9,4 @@ npm-debug.log
 *.beam
 /config/*.secret.exs
 .elixir_ls/
+__pycache__
