@@ -24,6 +24,7 @@ defmodule Chandelier.Lights do
     Logger.info "Starting Lights"
     lights = Enum.into(@pins, [], fn(pin) ->
       {:ok, gpio} = GPIO.open(pin, :output)
+      :ok = GPIO.write(pin, 1) # HIGH is off
       gpio
     end)
 
