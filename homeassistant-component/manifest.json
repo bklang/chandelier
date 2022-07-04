@@ -1,8 +1,10 @@
 {
+  "version": "0.0.1",
   "domain": "chandelier",
   "name": "Chandelier",
   "documentation": "https://github.com/bklang/chandelier",
   "dependencies": [],
   "codeowners": [],
-  "requirements": []
+  "requirements": [],
+  "iot_class": "local_polling"
 }
